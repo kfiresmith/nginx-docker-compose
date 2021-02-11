@@ -1,8 +1,9 @@
 web:
   image: nginx
   volumes:
-    - ./nginx.conf:/etc/nginx/nginx.conf:ro
+    - ./nginx.conf:/etc/nginx/nginx.conf
+    - ./nginx.conf.d:/etc/nginx/nginx.conf.d
     - ./log:/var/log/nginx
-    - ./docroot:/var/www
+    - ./docroot:/usr/share/nginx/html
   ports:
     - 80:80
