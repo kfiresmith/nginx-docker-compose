@@ -1,0 +1,13 @@
+web:
+  image: nginx
+  volumes:
+    - ./nginx.conf:/etc/nginx/nginx.conf:ro
+    - ./log:/var/log/nginx
+    - ./docroot:/var/www
+    - /mnt/storage/bandersnatch-docker-compose/pypi-content/web/simple:/var/www/python
+    - /mnt/storage/ubuntu:/var/www/ubuntu
+    - /mnt/storage/ros:/var/www/ros
+    - /mnt/storage/rosdocs:/var/www/rosdocs
+    - /mnt/storage/roswiki:/var/www/roswiki
+  ports:
+    - 80:80
