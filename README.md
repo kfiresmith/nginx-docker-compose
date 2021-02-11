@@ -27,3 +27,5 @@ Feb 11 14:06:08 dockerhost.college.edu nginx_a68ce560f764[5174]: 2021/02/11 14:0
 ```
 Feb 11 14:07:58 dockerhost.college.edu nginx_a68ce560f764[5174]: 10.123.234.123 - - [11/Feb/2021:14:07:58 +0000] "GET / HTTP/1.1" 200 665 "-" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:85.0) Gecko/20100101 Firefox/85.0"
 ```
+
+If you'd like to play with logging driver tags based off of docker template markup, there are toher special values you can use, documented here: https://docs.docker.com/config/containers/logging/log_tags/
